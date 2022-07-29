@@ -1,0 +1,107 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Softwarica Asks - Where Students Learn, Share, &amp; Build Careers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+
+</head>
+<body>
+
+<header>
+
+
+    <div style="margin-top: 10px;">
+        {% if messages %}
+        {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}" role="alert">
+        <h4 style="text-align: center;">{{ message }}</h4>
+      </div>
+      {% endfor %}
+    {% endif %}
+    </div>
+
+        
+</header>
+
+
+{% block content %}
+
+{% endblock content %}
+
+<section class="jobs">
+    <div class="container">
+
+        <div class="jobs-content">
+            <h3 class="jobs-title" id="contact">Contact Us</h3>
+            <div class="jobs-body">
+                    <div class="jobs-items">
+                        <div class="column">
+                            <div class="jobs-item">
+                                <img src="https://cdn.sstatic.net/Img/home/jobs-tech.svg?v=42f011c01763" alt="" class="jobs-item-img">
+                                <p class="jobs-item-description">Phone</p>
+                                <h6> 4525661 </h6>
+                            </div>
+                            <div class="jobs-item">
+                                <img src="https://cdn.sstatic.net/Img/home/jobs-salary.svg?v=401840ff8931" alt="" class="jobs-item-img">
+                                <p class="jobs-item-description">Email</p>
+                                <h6><span> softwarica@gmail.com </span> <a href="mailto:frontdesk@softwarica.com"> </h6>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="jobs-item">
+                                <img src="https://cdn.sstatic.net/Img/home/jobs-visa.svg?v=1f3acc6dc772" alt="" class="jobs-item-img">
+                                <p class="jobs-item-description">Address</p>
+                                <h6>
+                                    <span>Kathmandu, Nepal</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobs-btn">
+                        <div class="btn btn-orange jobs-btn">Join Us now</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer2" style="background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); align-items: center; min-height: 200px; flex-direction: column; padding-top: 15px; padding-bottom: 10px;">
+    <div class="footer container" style="text-align: center; ">
+    <div class="brand">
+        <h1 style="font-size: 25px; text-transform: none; color: white; space-between:none;"><span style="color: crimson;">S</span>oftwarica <span style="color: crimson;">A</span>sks</h1>
+    </div>
+    <h2 style="color: white; font-weight: 500; font-size: 18px; letter-spacing: 0.1rem; margin-top: 10px; margin-bottom: 10px;">Together we succeed</h2>
+    <ul class="social-icon" style="justify-content:center; display: flex; flex-direction: row; padding-right: 10px; list-style: none;">
+        <li><div class="facebook">
+        <a href="https://www.facebook.com/softwarica.nepal"><img src="https://img.icons8.com/color/48/000000/facebook.png" style ="width: 40px; height: 40px; filter: grayscale(1); transition: 0.3s ease filter; margin: 0 5px;"></a>
+        </div></li>
+        <li><div class="instagram">
+        <a href="https://www.instagram.com/softwarica.college/"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" style ="width: 40px; height: 40px; filter: grayscale(1); transition: 0.3s ease filter; margin: 0 5px;"></a>
+        </div></li>
+        <li><div class="twitter">
+        <a href="https://twitter.com/SoftwaricaNepal"><img src="https://img.icons8.com/color/48/000000/twitter-squared.png" style ="width: 40px; height: 40px; filter: grayscale(1); transition: 0.3s ease filter; margin: 0 5px;"></a>
+        </div></li>
+        <li><div class="youtube">
+            <a href="https://www.youtube.com/c/SOFTWARICACOLLEGEOFITANDECOMMERCEKathmandu"><img src="https://img.icons8.com/fluency/48/000000/youtube-squared.png" style ="width: 40px; height: 40px; filter: grayscale(1); transition: 0.3s ease filter; margin: 0 5px;"></a>
+        </div></li>
+    </ul>
+    <p style="color: white; font-size: 12px; align-items: center;">Softwarica College of IT & E-Commerce. Copyrights @ 2022. All Rights Reserved</p>
+    </div>
+</section>
+
+
+
+<script src="{% static 'main.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>

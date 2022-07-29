@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Welcome <span></span></h1>
+        <h1 class="hero-title">To SoftwaricaAsks! <span></span></h1>
+        <h1 class="hero-title">Ask us <span></span></h1>
+        <p class="hero-paragraph">
+            Together we succeed
+        </p>
+        <div class="hero-options">
+            <a href="{% url 'stackbase:question-lists' %}" class="btn btn-developers" style="margin-left: 5px;">Join Community</a>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="for-businesses">
+    <div class="container">
+        <div class="section-head">
+            <h2 class="section-title">For students, by students</h2>
+            <div class="section-line"></div>
+            <p class="section-description">You can ask your own question to the community. The best answers will be given with votes and comments. Strong community with smart students will be participating in the forum for getting and giving help.</p>
+        </div>
+
+
+
+        <div class="options">
+            <div class="option">
+                <div class="option-icon">
+                    <img src="https://cdn.sstatic.net/Img/home/private-questions.svg?v=a4f1cfb08f7e" alt="Private Q&A">
+                </div>
+                <div class="option-description">
+                    Share your ideas
+                </div>
+            </div>
+            <div class="option">
+                <div class="option-icon">
+                    <img src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3" alt="Talent solutions">
+                </div>
+                <div class="option-description">
+                    Make new friends
+                </div>
+            </div>
+            <div class="option">
+                <div class="option-icon">
+                    <img src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02" alt=" Advertising platform">
+                </div>
+                <div class="option-description">
+                    Earn votes, get recognized
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+<section class="questions">
+    <div class="container">
+       <div class="questions-content">
+           <div class="questions-header">
+               <h3 class="question-title">Don't hesitate to ask us</h3>
+           </div>
+           <div class="questions-body">
+               <div class="questions-body-items">
+                   <div class="questions-body-item" data-id="0">
+                       <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg?v=f4f2050b0297" alt="" class="question-item-icon">
+                       <div class="question-item-text">Add questions</div>
+                       <div class="question-arrow-right"></div>
+                   </div>
+                   <div class="questions-body-item"  data-id="1">
+                       <img src="https://cdn.sstatic.net/Img/home/votes.svg?v=748a8f48a8e2" alt="" class="question-item-icon">
+                       <div class="question-item-text">Upvote and downvote</div>
+                       <div class="question-arrow-right"></div>
+                   </div >
+                   <div class="questions-body-item"  data-id="2">
+                       <img src="https://cdn.sstatic.net/Img/home/answer.svg?v=4cd8048a676c" alt="" class="question-item-icon">
+                       <div class="question-item-text">Give answers like a pro</div>
+                       <div class="question-arrow-right"></div>
+                   </div>
+               </div>
+               <div class="questions-body-item-content">
+                   <img src="https://cdn.sstatic.net/Img/home/illo-feats-vote.svg?v=9d2eb0efdc17" alt="" class="question-item-content-img">
+                   <h4 class="question-item-content-text">
+                       'Gaining Knowledge' is the first step to wisdom,
+                       'Sharing it' is the first step to humanity.
+                   </h4>
+                   <a href="#" class="btn btn-orange question-item-content-btn">Create an account</a>
+               </div>
+               <div class="questions-body-items">
+                   <div class="questions-body-item"  data-id="3">
+                       <img src="https://cdn.sstatic.net/Img/home/tags.svg?v=913379eb09eb" alt="" class="question-item-icon">
+                       <div class="question-item-text">Tag your questions</div>
+                       <div class="question-arrow-left"></div>
+                   </div>
+                   <div class="questions-body-item"  data-id="4">
+                       <img src="https://cdn.sstatic.net/Img/home/accept.svg?v=27d5be078970" alt="" class="question-item-icon">
+                       <div class="question-item-text">Accept the solutions</div>
+                       <div class="question-arrow-left"></div>
+                   </div>
+                   <div class="questions-body-item"  data-id="5">
+                       <img src="https://cdn.sstatic.net/Img/home/get-recognized.svg?v=3b339d9aa10c" alt="" class="question-item-icon">
+                       <div class="question-item-text">Learn and grow</div>
+                       <div class="question-arrow-left"></div>
+                   </div>
+               </div>
+           </div>
+           <div class="questions-footer">
+               <h3 class="question-title" id="members">Members</h3>
+               <div class="questions-grid">
+                   <div class="questions-grid-item">
+                       <div class="grid-item-img">
+                           <img src="https://img.freepik.com/premium-vector/brunette-man-avatar-portrait-young-guy-vector-illustration-face_217290-1035.jpg?w=1060" alt="">
+                       </div>
+                       <h4 class="grid-item-title">Crystal Shrestha</h4>
+                       <p class="grid-item-description">Scrum Master, Front-end Developer, Back-end Developer
+                       </p>
+                   </div>
+                   <div class="questions-grid-item">
+                       <div class="grid-item-img">
+                           <img src="https://img.freepik.com/free-vector/boy-using-smartphone-white-background_1308-50786.jpg?w=996&t=st=1659103641~exp=1659104241~hmac=74796595814af8ae8869d98c0891c9543662c3d57ebf37b527b105fd3e096263" alt="">
+                       </div>
+                       <h4 class="grid-item-title">Dipson Panta
+                       </h4>
+                       <p class="grid-item-description">Front-end Developer, Back-end Developer
+                       </p>
+                   </div>
+                   <div class="questions-grid-item">
+                       <div class="grid-item-img">
+                           <img src="https://img.freepik.com/free-vector/young-woman-pink-dress-smiling_1450-140.jpg?w=1060&t=st=1659103758~exp=1659104358~hmac=6a267d8d38d446ff23b9c782dfab9f318346c86d39f1d603ecef6371d48000d7" alt="">
+                       </div>
+                       <h4 class="grid-item-title">Jasmine Osti
+                       </h4>
+                       <p class="grid-item-description">Support
+                       </p>
+                   </div>
+                   <div class="questions-grid-item">
+                       <div class="grid-item-img">
+                           <img src="https://img.freepik.com/premium-vector/young-good-looking-man-doing-arm-crossed-pose-with-confident_97632-4855.jpg?w=740" alt="" >
+                       </div>
+                       <h4 class="grid-item-title">Ramesh Budha
+                       </h4>
+                       <p class="grid-item-description">Hospitalized
+                       </p>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+</section>
+
+
+
+
+{% endblock content %}
+
+
