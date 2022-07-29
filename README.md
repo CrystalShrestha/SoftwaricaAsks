@@ -7,4 +7,8 @@ The main features of SoftwaricaAsks are listed below:
 3) After signing up, users will be able to put up their questions and find the related answers if it’s already available, if not anyone who’s associated with the question will respond to your queries.
 4) People can enter the ‘Users’ and ‘Companies’ tabs to view the list of users and the companies who have registered themselves in Softwarica Asks community respectively.
 5) The system sorts out top questions and frequently explored topics so that users can browse for best question and answers
+### A Web Application
+Language Used:
+Frontend: #HTML, #CSS, #JS
+Backend: #MySQL
 
