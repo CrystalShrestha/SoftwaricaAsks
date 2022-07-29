@@ -12,5 +12,7 @@ Language Used:
 
 Frontend: #HTML, #CSS, #JS
 
-Backend: #MySQL
+Backend: #Django
+
+Database: #MySQL
 
