@@ -9,6 +9,7 @@ The main features of SoftwaricaAsks are listed below:
 5) The system sorts out top questions and frequently explored topics so that users can browse for best question and answers
 ### A Web Application
 Language Used:
+
 Frontend: #HTML, #CSS, #JS
 
 Backend: #MySQL
